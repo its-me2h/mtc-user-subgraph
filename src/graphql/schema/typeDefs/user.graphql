@@ -1,0 +1,19 @@
+type User {
+    id: ID
+    email: String
+    phone: String
+    profile: Profile
+    createdAt: String
+    updatedAt: String
+}
+
+input CreateUserInput {
+    id: ID!
+    email: String!
+    phone: String
+}
+
+input UpdateUserInput {
+    email: String
+    phone: String
+}

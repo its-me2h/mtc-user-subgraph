@@ -1,0 +1,4 @@
+type Mutation {
+    createProfile(input: CreateProfileInput!): Profile!
+    updateProfile(userId: ID!, input: UpdateProfileInput!): Profile!
+}

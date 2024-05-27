@@ -1,0 +1,35 @@
+type Profile {
+    userId: ID
+    firstName: String
+    lastName: String
+    birthDate: String
+    gender: Gender
+    avatarURI: String
+    bannerURI: String
+    createdAt: String
+    updatedAt: String
+}
+
+input CreateProfileInput {
+    userId: ID!
+    firstName: String!
+    lastName: String!
+    birthDate: String
+    gender: Gender!
+    avatarURI: String
+    bannerURI: String
+}
+
+input UpdateProfileInput {
+    firstName: String
+    lastName: String
+    birthDate: String
+    gender: Gender
+    avatarURI: String
+    bannerURI: String
+}
+
+enum Gender {
+    MALE
+    FEMALE
+}
